@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    
+   int gallons_used, starting_mileage,
+       ending_mileage, distance_drive,
+       average_miles_per_gallon;
+     
+cout<<"Enter gallons used ";
+cin>> gallons_used;
+
+cout<<"Enter starting mileage ";
+cin>> starting_mileage;
+
+cout<<"Enter ending mileage ";
+cin>> ending_mileage;
+
+     distance_drive = ending_mileage - starting_mileage;
+     
+     average_miles_per_gallon = distance_drive / gallons_used;
+     
+     cout<<"The average_miles_per_gallon: ";//<< average_miles_per_gallon << endl;
+     
+     if(average_miles_per_gallon > 25 ){
+         cout<<"You are getting good gas mileage";
+     }
+else
+         cout<<"You are NOT getting good gas mileage";
+         
+         return 0;
+}
